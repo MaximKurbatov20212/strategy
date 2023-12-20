@@ -7,8 +7,6 @@ public class BestStrategy : ICardPickStrategy
 {
     public int Pick(Card[] cards)
     {
-        if (cards.Length != 18) return 1;
-
         for (int x = 0; x < cards.Length; x += 1)
         {
             if (x % 2 == 0)
